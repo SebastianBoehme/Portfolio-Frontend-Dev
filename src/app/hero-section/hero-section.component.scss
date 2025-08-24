@@ -1,0 +1,252 @@
+section {
+    height: 100svh;
+    width: 100%;
+    margin-top: -98px;
+    background: linear-gradient(55.22deg, rgb(28, 28, 28) 36.26%, rgb(8, 70, 59) 93.28%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headline-container {
+    max-width: 1440px;
+    color: rgba(217, 217, 217, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+        h1 {
+            font-size: 128px;
+        }
+        h2 {
+            font-size: 40px;
+        }
+}
+
+.button-container {
+    max-width: 1440px;
+    padding-top: 40px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    color: rgba(217, 217, 217, 1);
+  }
+  
+  .hero-button {
+    height: 48px;
+    width: auto;
+    border: 1px solid rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    overflow: hidden;
+    
+    &:hover {
+      cursor: pointer;
+      border-color: rgba(61, 207, 182, 1);
+      color: rgba(61, 207, 182, 1);
+      
+      .animated-text {
+        animation: marquee 1s ease-out infinite;
+      }
+    }
+    
+    p {
+      font-size: 18px;
+      line-height: 120%;
+      white-space: nowrap;
+      padding-left: 24px;
+      padding-right: 24px;
+      
+      &::after {
+        content: attr(data-text);
+        position: fixed;
+        left: calc(100% + 30%);
+        white-space: nowrap;
+      }
+    }
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-200%);
+    }
+}
+
+.banner {
+  backdrop-filter: blur(5.300000190734863px);
+  padding: 12px 32px 12px 32px;
+  background: rgba(255, 255, 255, 0.12);
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 5%;
+  overflow: hidden;
+  transform: rotate(-3deg);
+  z-index: 3;
+}
+
+.spaceholder {
+  height: 10px;
+  width: 10px;
+}
+
+.marquee {
+  display: flex;
+  width: 100%;
+  animation: marquee 10s linear infinite;
+  
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 112px;
+    white-space: nowrap;
+  }
+
+  p {
+    color: rgba(61, 207, 182, 1);
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    
+    
+    &::after {
+      position: relative;
+      left: 100%;
+      white-space: nowrap;
+    }
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-125%);
+  }
+}
+
+.decoration-container {
+  // padding-left: 96px;
+  // padding-right: 96px;
+  max-width: 1400px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0;
+}
+
+.decoration-hero-left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 312px;
+  gap: 24px;
+  // padding-left: 96px;
+  left: 0;
+}
+
+.decoration-hero-right {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  max-width: 40px;
+  gap: 24px;
+  // padding-right: 96px;
+  left: 0;
+}
+
+.scroll-arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 30px;
+  border: 1px solid rgba(61, 207, 182, 1);
+  border-radius: 100px;
+}
+
+.scroll-down {
+  animation: float 1.5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.decoration-line-left {
+  height: 240px;
+  bottom: 0;
+  width: 1px;
+  border: 1px solid rgba(61, 207, 182, 1);
+  z-index: 1;
+}
+
+.decoration-line-right {
+  height: 186px;
+  width: 1px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  z-index: 1;
+}
+
+.linkedin-icon {
+  height: 32px;
+  width: 32px;
+  background-image: url(../../assets/img/Linkedin.svg);
+    
+  &:hover {
+    cursor: pointer;
+    background-image: url(../../assets/img/Linkedin-hover.svg);
+  }
+}
+
+.github-icon {
+  height: 32px;
+  width: 32px;
+  background-image: url(../../assets/img/Github.svg);
+    
+  &:hover {
+    cursor: pointer;
+    background-image: url(../../assets/img/Github-hover.svg);
+  }
+}
+
+.link-icon-containter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 140px;
+  gap: 24px;
+}
+
+.email-link {
+  transform: rotate(-90deg);
+  color: rgba(255, 255, 255, 1);
+  line-height: 120%;
+  font-size: 18px;
+  text-decoration: none;
+
+  &:hover {
+    color: rgba(61, 207, 182, 1);
+  }
+}
