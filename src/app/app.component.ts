@@ -6,13 +6,13 @@ import { NavigationComponent } from '../app/navigation/navigation.component';
 import { AboutMeComponent } from "../app/about-me/about-me.component";
 import { SkillsComponent } from "./skills/skills.component";
 import { ProjectsComponent } from "./projects/projects.component";
-import { ReferencesComponent } from "./references/references.component";
+import { ContactComponent } from "./contact/contact.component";
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HeroSectionComponent, NavigationComponent, AboutMeComponent, SkillsComponent, ProjectsComponent, ReferencesComponent],
+  imports: [CommonModule, RouterOutlet, HeroSectionComponent, NavigationComponent, AboutMeComponent, SkillsComponent, ProjectsComponent, ContactComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
