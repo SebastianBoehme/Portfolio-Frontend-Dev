@@ -1,12 +1,24 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
+
+  concactData = {
+    name: "",
+    email: "",
+    message: ""
+  }
+
+onSubmit(){
+  console.log(this.concactData);
+  
+}
 
 }

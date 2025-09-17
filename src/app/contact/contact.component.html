@@ -1,28 +1,49 @@
 <section class="contact-section">
+  <div class="contact-content">
+    <div class="contact-description">
+      <div class="gretting">
+        <h2 class="karla">Kontaktieren Sie mich</h2>
+        <h1 class="fira-code">Arbeiten wir zusammen</h1>
+      </div>
 
-    <div class="contact-content">
-
-        <div class="contact-description">
-
-            <div class="gretting">
-                <h2 class="karla">Kontaktieren Sie mich</h2>
-                <h1 class="fira-code">Arbeiten wir zusammen</h1>
-            </div>
-
-            <div class="why-contact-me">
-                <h2 class="fira-code">Sie haben ein Problem zu lösen?</h2>
-                <p class="karla description">Ich suche nach Stellen als Frontend-Entwickler mit starkem Fokus auf UI/UX. <br> Mein Ziel ist es, Benutzeroberflächen und Designs zu gestalten und umzusetzen,<br> die nicht nur gut aussehen, sondern sich auch natürlich und intuitiv anfühlen.</p>
-                <div class="need-a-dev">
-                    <p class="karla grey">Sie brauchen einen Frontend-Entwickler?</p> <p class="karla green">Let's talk!</p>
-                </div>
-            </div>
-            
+      <div class="why-contact-me">
+        <h2 class="fira-code">Sie haben ein Problem zu lösen?</h2>
+        <p class="karla description">
+          Ich suche nach Stellen als Frontend-Entwickler mit starkem Fokus auf
+          UI/UX. <br />
+          Mein Ziel ist es, Benutzeroberflächen und Designs zu gestalten und
+          umzusetzen,<br />
+          die nicht nur gut aussehen, sondern sich auch natürlich und intuitiv
+          anfühlen.
+        </p>
+        <div class="need-a-dev">
+          <p class="karla grey">Sie brauchen einen Frontend-Entwickler?</p>
+          <p class="karla green">Let's talk!</p>
         </div>
-
-        <div class="contact-form">
-
-        </div>
-
+      </div>
     </div>
 
+    <div class="contact-form">
+      <form (ngSubmit)="onSubmit()" >
+
+        <div class="single-form">
+            <label class="fira-code" for="name">Wie ist ihr Name?</label>
+            <input [(ngModel)]="concactData.name" type="text" id="name" name="name" placeholder="Ihr Name kommt hier hin." class="karla form-input"/>
+        </div>
+
+        <div class="single-form-mid">
+            <label class="fira-code" for="email">Wie lautet Ihre E-Mail Adresse?</label>
+            <input [(ngModel)]="concactData.email" type="email" id="email" name="email" placeholder="ihreemail@email.com" class="karla form-input"/>
+        </div>
+
+        <div class="single-form">
+            <label class="fira-code" for="message">Wie kann ich Ihnen helfen?</label>
+            <textarea [(ngModel)]="concactData.message" id="message" name="message" placeholder="Hi Sebastian, ..." class="karla email-input"></textarea>
+        </div>
+
+        <input type="submit" value="Submit" />
+
+      </form>
+    </div>
+  </div>
 </section>
