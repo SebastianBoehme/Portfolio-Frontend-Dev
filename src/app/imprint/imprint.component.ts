@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './imprint.component.scss'
 })
 export class ImprintComponent {
+  highlightColor = 'rgba(255, 255, 255, 1)'
 
 }
