@@ -24,25 +24,51 @@
     </div>
 
     <div class="contact-form">
-      <form (ngSubmit)="onSubmit()" >
-
+      <form (ngSubmit)="onSubmit()">
         <div class="single-form">
-            <label class="fira-code" for="name">Wie ist ihr Name?</label>
-            <input [(ngModel)]="concactData.name" type="text" id="name" name="name" placeholder="Ihr Name kommt hier hin." class="karla form-input"/>
+          <label class="fira-code" for="name">Wie ist ihr Name?</label>
+          <input
+            [(ngModel)]="concactData.name"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Ihr Name kommt hier hin."
+            class="karla form-input"
+          />
         </div>
 
         <div class="single-form-mid">
-            <label class="fira-code" for="email">Wie lautet Ihre E-Mail Adresse?</label>
-            <input [(ngModel)]="concactData.email" type="email" id="email" name="email" placeholder="ihreemail@email.com" class="karla form-input"/>
+          <label class="fira-code" for="email"
+            >Wie lautet Ihre E-Mail Adresse?</label
+          >
+          <input
+            [(ngModel)]="concactData.email"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="ihreemail@email.com"
+            class="karla form-input"
+          />
         </div>
 
         <div class="single-form">
-            <label class="fira-code" for="message">Wie kann ich Ihnen helfen?</label>
-            <textarea [(ngModel)]="concactData.message" id="message" name="message" placeholder="Hi Sebastian, ..." class="karla email-input"></textarea>
+          <label class="fira-code" for="message"
+            >Wie kann ich Ihnen helfen?</label
+          >
+          <textarea
+            [(ngModel)]="concactData.message"
+            id="message"
+            name="message"
+            placeholder="Hi Sebastian, ..."
+            class="karla email-input"
+          ></textarea>
         </div>
 
-        <input type="submit" value="Submit" />
-
+        <div class="submit-area">
+        <button type="submit" class="contact-btn karla">
+          <span class="animated-text" data-text="Say hello">Say hello</span>
+        </button>
+        </div>
       </form>
     </div>
   </div>
