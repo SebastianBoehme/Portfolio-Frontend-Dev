@@ -11,4 +11,5 @@ import { RouterModule } from '@angular/router';
 })
 export class FooterComponent {
   email: string = 'sebastianboehme.dev@gmail.com';
+  currentYear: number = new Date().getFullYear();
 }

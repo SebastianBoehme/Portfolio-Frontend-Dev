@@ -133,7 +133,7 @@ p {
 
 .skills-right {
   padding-top: 48px;
-  width: 50%;
+  width: 55%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
@@ -141,9 +141,11 @@ p {
 
 .skills {
   height: fit-content;
+  max-height: 500px;
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
+  overflow: hidden;
 }
 
 .single-skill {
@@ -158,12 +160,12 @@ p {
     width: 60px;
     height: 60px;
     transition: transform 0.3s ease, opacity 0.3s ease;
-    opacity: 0.8; // leicht transparent als Ausgangszustand
+    opacity: 0.8;
   }
 
   &:hover img {
     transform: scale(1.2);
-    opacity: 1; // wird beim Hover vollständig sichtbar
+    opacity: 1;
   }
 
   p {
@@ -215,39 +217,6 @@ p {
     align-items: center;
   }
 }
-
-// .tooltip {
-//   position: relative;
-//   bottom: 140px;
-//   left: 170px;
-//   padding: 16px;
-//   display: flex;
-//   flex-direction: column;
-//   gap: 8px;
-//   width: 188px;
-//   height: fit-content;
-//   background-color: rgba(255, 255, 255, 1);
-//   border-radius: 16px;
-//     .learn-skills {
-//       gap: 16px;
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//     }
-//     p {
-//       font-size: 16px;
-//       color: rgba(61, 207, 182, 1);
-//     }
-//     .learn-icon {
-//       height: 32px;
-//       width: 32px;
-//     }
-//     .single-skill-to-learn {
-//       display: flex;
-//       flex-direction: column;
-//       align-items: center;
-//     }
-// }
 
  #skill-10:hover {
   p {
