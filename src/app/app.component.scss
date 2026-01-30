@@ -12,3 +12,24 @@ body {
 .content {
   flex: 1;
 }
+
+.cursor-glow {
+  position: fixed;
+  width: 800px;
+  height: 800px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 1;
+
+  background: radial-gradient(
+    circle at center,
+    rgba(29, 249, 215, 0.45) 0%,
+    rgba(29, 249, 215, 0.2) 15%,
+    rgba(29, 249, 215, 0.05) 35%,
+    rgba(29, 249, 215, 0) 50%
+  );
+
+  filter: blur(20px); 
+  
+  transition: left 0.01s ease-out, top 0.01s ease-out;
+}
