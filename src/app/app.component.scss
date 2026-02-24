@@ -1,4 +1,6 @@
-:root, body, html {
+:root,
+body,
+html {
   height: 100%;
   margin: 0;
 }
@@ -29,8 +31,9 @@ body {
     rgba(29, 249, 215, 0) 50%
   );
 
-  filter: blur(20px); 
-  
-  transition: left 0.01s ease-out, top 0.01s ease-out;
-}
+  filter: blur(20px);
 
+  transition:
+    left 0.01s ease-out,
+    top 0.01s ease-out;
+}
