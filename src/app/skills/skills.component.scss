@@ -8,6 +8,7 @@ section {
 }
 
 .skills-content {
+  gap: 44px;
   max-width: 1440px;
   width: 100%;
   height: 70%;
@@ -133,7 +134,7 @@ p {
 
 .skills-right {
   padding-top: 48px;
-  width: 55%;
+  width: 50%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
@@ -145,7 +146,6 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
-  overflow: hidden;
 }
 
 .single-skill {
@@ -159,7 +159,9 @@ p {
   img {
     width: 60px;
     height: 60px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
     opacity: 0.8;
   }
 
@@ -187,7 +189,9 @@ p {
   background-color: rgba(255, 255, 255, 1);
   opacity: 0;
   visibility: hidden;
-  transition: opacity 3s ease, visibility 3s ease;
+  transition:
+    opacity 3s ease,
+    visibility 3s ease;
 
   &.visible {
     opacity: 1;
@@ -218,8 +222,8 @@ p {
   }
 }
 
- #skill-10:hover {
+#skill-10:hover {
   p {
     color: rgba(61, 207, 182, 1);
   }
- }
+}
