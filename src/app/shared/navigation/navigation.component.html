@@ -1,5 +1,23 @@
 <section class="navigation-section">
   <div class="nav-container">
+    <div class="language-switch" (click)="switchLanguage()" role="button">
+      <div
+        class="toggle-pill"
+        [class.is-en]="translate.currentLang === 'en'"
+      ></div>
+
+      <div class="language-de">
+        <span class="fira-code" [class.active]="translate.currentLang === 'de'"
+          >DE</span
+        >
+      </div>
+      <div class="language-en">
+        <span class="fira-code" [class.active]="translate.currentLang === 'en'"
+          >EN</span
+        >
+      </div>
+    </div>
+
     <a class="fira-code" href="#about-me">{{ "NAV.ABOUT" | translate }}</a>
     <a class="fira-code" href="#skills">{{ "NAV.SKILLS" | translate }}</a>
     <a class="fira-code" href="#projects">{{ "NAV.PROJECTS" | translate }}</a>
