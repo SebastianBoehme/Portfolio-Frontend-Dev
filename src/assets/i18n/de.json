@@ -12,5 +12,19 @@
     "LOCATION": "Wohnhaft in Alzey",
     "OPEN_FOR_WORK": "Offen für Arbeit",
     "REMOTELY": "interessiert an Homeoffice-Stellen"
+  },
+  "ABOUT": {
+    "WHO_AM_I": "Wer bin ich?",
+    "TITLE": "Über mich",
+    "DESCRIPTION": "Hi! Ich bin Sebastian. Ich bin Junior Frontend Entwickler und ein absoluter CSS Maniac. Ich liebe es Designs zu verwirklichen und mit meinem kreativen Mindset und meinem Auge für Details an der Entstehung von Kunstwerken im Netz beteiligt zu sein.",
+    "LOCATION_TEXT": "Wohnhaft in Alzey, nähe Mainz. Grundsätzlich offen für Homeoffice Stellen.",
+    "TOOLS_TEXT": "Ich liebe es neue Tools zu entdecken und meine Fähigkeiten mit bereits bekannten Tools zu erweitern.",
+    "CREATIVITY_TEXT": "Mein Auge für die kleinen Dinge und mein kreativer Kopf helfen mir bei der Umsetzung vieler komplexer Designs. Gerne brainstorme ich über die beste Lösung. Alleine, gerne aber auch im Team.",
+    "ALT": {
+      "PROFILE": "Foto vom Entwickler",
+      "LOCATION": "Standort-Icon",
+      "COGNITION": "Kognition-Icon",
+      "CHECK": "Häkchen-Icon"
+    }
   }
 }

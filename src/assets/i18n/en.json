@@ -12,5 +12,19 @@
     "LOCATION": "Based in Alzey",
     "OPEN_FOR_WORK": "Open for work",
     "REMOTELY": "interested in remote positions"
+  },
+  "ABOUT": {
+    "WHO_AM_I": "Who am I?",
+    "TITLE": "About me",
+    "DESCRIPTION": "Hi! I'm Sebastian. I'm a Junior Frontend Developer and an absolute CSS maniac. I love bringing designs to life and using my creative mindset and eye for detail to help create digital works of art.",
+    "LOCATION_TEXT": "Based in Alzey, near Mainz. Generally open to remote positions.",
+    "TOOLS_TEXT": "I love discovering new tools and expanding my skills with the ones I already know.",
+    "CREATIVITY_TEXT": "My eye for the little things and my creative mind help me implement many complex designs. I enjoy brainstorming the best solutions – alone, but also gladly in a team.",
+    "ALT": {
+      "PROFILE": "Picture of the developer",
+      "LOCATION": "location-pin",
+      "COGNITION": "cognition-icon",
+      "CHECK": "check-icon"
+    }
   }
 }
