@@ -3,5 +3,14 @@
     "ABOUT": "About me",
     "SKILLS": "Skills",
     "PROJECTS": "Projects"
+  },
+  "HERO": {
+    "ROLE": "Frontend Developer",
+    "NAME": "Sebastian Böhme",
+    "PROJECTS_BTN": "My projects",
+    "CONTACT_BTN": "Contact me",
+    "LOCATION": "Based in Alzey",
+    "OPEN_FOR_WORK": "Open for work",
+    "REMOTELY": "interested in remote positions"
   }
 }

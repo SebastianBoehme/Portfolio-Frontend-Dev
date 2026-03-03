@@ -3,5 +3,14 @@
     "ABOUT": "Über mich",
     "SKILLS": "Fähigkeiten",
     "PROJECTS": "Projekte"
+  },
+  "HERO": {
+    "ROLE": "Frontend Entwickler",
+    "NAME": "Sebastian Böhme",
+    "PROJECTS_BTN": "Meine Projekte",
+    "CONTACT_BTN": "Kontaktieren Sie mich",
+    "LOCATION": "Wohnhaft in Alzey",
+    "OPEN_FOR_WORK": "Offen für Arbeit",
+    "REMOTELY": "interessiert an Homeoffice-Stellen"
   }
 }
