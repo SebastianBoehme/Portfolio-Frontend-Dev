@@ -1,63 +1,64 @@
 import { Component } from '@angular/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './skills.component.html',
-  styleUrl: './skills.component.scss'
+  styleUrl: './skills.component.scss',
 })
 export class SkillsComponent {
-
   skills: { icon: string; name: string }[] = [
     {
       icon: '../../assets/img/skills-icons/html-icon.svg',
-      name: 'HTML'
+      name: 'HTML',
     },
     {
       icon: '../../assets/img/skills-icons/css-icon.svg',
-      name: 'CSS3'
+      name: 'CSS3',
     },
     {
       icon: '../../assets/img/skills-icons/js-icon.svg',
-      name: 'JavaScript'
+      name: 'JavaScript',
     },
     {
       icon: '../../assets/img/skills-icons/material-design-icon.svg',
-      name: 'Material Design'
+      name: 'Material Design',
     },
     {
       icon: '../../assets/img/skills-icons/ts-icon.svg',
-      name: 'TypeScript'
+      name: 'TypeScript',
     },
     {
       icon: '../../assets/img/skills-icons/angular-icon.svg',
-      name: 'Angular'
+      name: 'Angular',
     },
-    { icon: '../../assets/img/skills-icons/firebase-icon.svg',
-      name: 'Firebase'
+    {
+      icon: '../../assets/img/skills-icons/firebase-icon.svg',
+      name: 'Firebase',
     },
     {
       icon: '../../assets/img/skills-icons/git-icon.svg',
-      name: 'GIT'
+      name: 'GIT',
     },
     {
       icon: '../../assets/img/skills-icons/rest-api-icon.svg',
-      name: 'Rest API'
+      name: 'Rest API',
     },
     {
       icon: '../../assets/img/skills-icons/scrum-icon.svg',
-      name: 'Scrum'
+      name: 'Scrum',
     },
     {
       icon: '../../assets/img/skills-icons/groth-mindset.svg',
-      name: 'Growth Mindset'
-    }
+      name: 'Growth Mindset',
+    },
   ];
 
-  
-
   showTooltip = false;
+
+  constructor(public translate: TranslateService) {}
 
   onHover(index: number) {
     if (index === this.skills.length - 1) {
@@ -68,5 +69,4 @@ export class SkillsComponent {
   onLeave() {
     this.showTooltip = false;
   }
-
 }
