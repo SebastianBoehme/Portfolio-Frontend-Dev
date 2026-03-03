@@ -12,7 +12,8 @@ export class NavigationComponent {
   constructor(public translate: TranslateService) {}
 
   switchLanguage() {
-    const nextLang = this.translate.currentLang === 'de' ? 'en' : 'de';
+    const current = this.translate.getCurrentLang() || 'de';
+    const nextLang = current === 'de' ? 'en' : 'de';
     this.translate.use(nextLang);
   }
 }

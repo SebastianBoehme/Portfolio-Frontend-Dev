@@ -1,20 +1,32 @@
 <section class="navigation-section">
   <div class="nav-container">
-    <div class="language-switch" (click)="switchLanguage()" role="button">
+    <div
+      class="language-switch"
+      (click)="switchLanguage()"
+      role="button"
+      tabindex="0"
+    >
       <div
         class="toggle-pill"
-        [class.is-en]="translate.currentLang === 'en'"
+        [class.is-en]="(translate.getCurrentLang() || 'de') === 'en'"
       ></div>
 
       <div class="language-de">
-        <span class="fira-code" [class.active]="translate.currentLang === 'de'"
-          >DE</span
+        <span
+          class="fira-code"
+          [class.active]="(translate.getCurrentLang() || 'de') === 'de'"
         >
+          DE
+        </span>
       </div>
+
       <div class="language-en">
-        <span class="fira-code" [class.active]="translate.currentLang === 'en'"
-          >EN</span
+        <span
+          class="fira-code"
+          [class.active]="(translate.getCurrentLang() || 'de') === 'en'"
         >
+          EN
+        </span>
       </div>
     </div>
 
