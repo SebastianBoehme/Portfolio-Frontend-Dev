@@ -1,30 +1,31 @@
 <section id="skills">
   <div class="skills-content">
     <div class="skills-left">
-      <h2 class="karla">Technologien</h2>
+      <h2 class="karla">{{ "SKILLS.SUBTITLE" | translate }}</h2>
       <div class="skills-box">
-        <h1 class="fira-code">Skill Set</h1>
+        <h1 class="fira-code">{{ "SKILLS.TITLE" | translate }}</h1>
         <p class="description karla">
-          Mein Skillset besteht aus HTML, CSS, JavaScript, Angular, Typescript
-          und Material Design. Zudem bin ich mit Tools wie Git, Firebase und
-          RestAPI vertraut. Auch Techniken wie Scrum und dazugehörige Kanbans
-          wie Trello sind mit nicht fremd.
+          {{ "SKILLS.DESCRIPTION" | translate }}
         </p>
         <div class="another-skill-container">
           <div class="another-skill fira-code">
-            <span>Sie suchen</span>
-            <span class="different-color">andere Skills?</span>
+            <span>{{ "SKILLS.SEARCH.PREFIX" | translate }}</span>
+            <span class="different-color">{{
+              "SKILLS.SEARCH.HIGHLIGHT" | translate
+            }}</span>
           </div>
           <p class="karla">
-            Kontaktieren Sie mich gerne. Ich freue mich darauf meine Fähigkeiten
-            zu erweitern.
+            {{ "SKILLS.SEARCH.DESCRIPTION" | translate }}
           </p>
         </div>
 
         <div class="lets-talk-button">
-          <span class="animated-text karla" data-text="Let's Talk"
-            >Let's Talk</span
+          <span
+            class="animated-text karla"
+            [attr.data-text]="'SKILLS.CTA' | translate"
           >
+            {{ "SKILLS.CTA" | translate }}
+          </span>
         </div>
       </div>
     </div>
@@ -32,26 +33,41 @@
     <div class="skills-right">
       <div class="skills">
         @for (skill of skills; track $index) {
-        <div id="skill-{{ $index }}" class="single-skill" 
-        (mouseenter)="onHover($index)"
-      (mouseleave)="onLeave()">
-          <img src="{{ skill.icon }}" alt="" />
-          <p class="fira-code">{{ skill.name }}</p>
+          <div
+            id="skill-{{ $index }}"
+            class="single-skill"
+            (mouseenter)="onHover($index)"
+            (mouseleave)="onLeave()"
+          >
+            <img src="{{ skill.icon }}" alt="" />
+            <p class="fira-code">{{ skill.name }}</p>
 
-          @if ($index === skills.length - 1 && showTooltip) {<div class="tooltip" [class.visible]="showTooltip">
-            <p class="karla">Ich habe Interesse daran folgende Skills zu lernen:</p>
-            <div class="learn-skills">
-              <div class="single-skill-to-learn">
-              <img class="learn-icon" src="../../assets/img/skills-icons/react-icon.svg" alt="react-icon">
-              <p class="karla">React</p>
-            </div>
-            <div class="single-skill-to-learn">
-              <img class="learn-icon" src="../../assets/img/skills-icons/vue-js-icon-colored.svg" alt="vue-js-icon">
-              <p class="karla">Vue JS</p>
-            </div>
-            </div>
-          </div>}
-        </div>
+            @if ($index === skills.length - 1 && showTooltip) {
+              <div class="tooltip" [class.visible]="showTooltip">
+                <p class="karla">
+                  {{ "SKILLS.TOOLTIP_HEADER" | translate }}
+                </p>
+                <div class="learn-skills">
+                  <div class="single-skill-to-learn">
+                    <img
+                      class="learn-icon"
+                      src="../../assets/img/skills-icons/react-icon.svg"
+                      alt="react-icon"
+                    />
+                    <p class="karla">React</p>
+                  </div>
+                  <div class="single-skill-to-learn">
+                    <img
+                      class="learn-icon"
+                      src="../../assets/img/skills-icons/vue-js-icon-colored.svg"
+                      alt="vue-js-icon"
+                    />
+                    <p class="karla">Vue JS</p>
+                  </div>
+                </div>
+              </div>
+            }
+          </div>
         }
       </div>
     </div>

@@ -26,5 +26,17 @@
       "COGNITION": "Kognition-Icon",
       "CHECK": "Häkchen-Icon"
     }
+  },
+  "SKILLS": {
+    "SUBTITLE": "Technologien",
+    "TITLE": "Fähigkeiten",
+    "DESCRIPTION": "Meine Fähigkeiten sind HTML, CSS, JavaScript, Angular, Typescript und Material Design. Zudem bin ich mit Tools wie Git, Firebase und RestAPI vertraut. Auch Techniken wie Scrum und dazugehörige Kanbans wie Trello sind mit nicht fremd.",
+    "SEARCH": {
+      "PREFIX": "Sie suchen",
+      "HIGHLIGHT": "andere Fähigkeiten?",
+      "DESCRIPTION": "Kontaktieren Sie mich gerne. Ich freue mich darauf meine Fähigkeiten zu erweitern."
+    },
+    "CTA": "Reden wir",
+    "TOOLTIP_HEADER": "Ich habe Interesse daran folgende Fähigkeiten zu lernen:"
   }
 }

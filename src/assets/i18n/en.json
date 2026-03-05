@@ -26,5 +26,17 @@
       "COGNITION": "cognition-icon",
       "CHECK": "check-icon"
     }
+  },
+  "SKILLS": {
+    "SUBTITLE": "Technologies",
+    "TITLE": "Skill Set",
+    "DESCRIPTION": "My skillset consists of HTML, CSS, JavaScript, Angular, TypeScript and Material Design. Furthermore, I am familiar with tools like Git, Firebase and RestAPI. Also techniques like Scrum and associated Kanbans like Trello are no strangers to me.",
+    "SEARCH": {
+      "PREFIX": "Looking for",
+      "HIGHLIGHT": "other skills?",
+      "DESCRIPTION": "Feel free to contact me. I look forward to expanding my skills."
+    },
+    "CTA": "Let's Talk",
+    "TOOLTIP_HEADER": "I am interested in learning the following skills:"
   }
 }
