@@ -38,5 +38,15 @@
     },
     "CTA": "Reden wir",
     "TOOLTIP_HEADER": "Ich habe Interesse daran folgende Fähigkeiten zu lernen:"
+  },
+  "PROJECTS": {
+  "TITLE": "Meine Projekte",
+  "INFO_TEXT": "Sehen Sie sich eine Auswahl meiner Arbeit an. \n Interagieren Sie mit Projekten um meine Fähigkeiten in Aktion zu sehen.",
+  "OVERLAY_QUESTION": "Worum geht es bei diesem Projekt?",
+  "GITHUB": "Github",
+  "LIVE_TEST": "Live Test",
+  "NEXT_PROJECT": "Nächstes Projekt",
+  "JOIN_DESC": "Ein kollaboratives To-do-Tool nach dem Vorbild von Trello - Aufgaben erstellen, zuweisen und per Drag & Drop nach Status sortieren sowie Kontakte erstellen, bearbeiten und löschen",
+  "POLLO_DESC": "Ein kleines, lustiges 2D Spiel mit einem Objektorientierten Ansatz. Begleite Pepe bei seinem Kampf gegen einen Hühneraufstand. Renne, springe und bewirf die verrückten Hennen mit Tabascoflaschen."
   }
 }

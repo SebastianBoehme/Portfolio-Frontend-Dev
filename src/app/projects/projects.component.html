@@ -2,11 +2,10 @@
   <div class="projects-content">
     <div class="projects-headline-container">
       <h2 class="karla">Portfolio</h2>
-      <h1 class="fira-code">Meine Projekte</h1>
+      <h1 class="fira-code">{{ "PROJECTS.TITLE" | translate }}</h1>
       <div class="description-container">
-        <p class="karla">
-          Sehen Sie sich eine Auswahl meiner Arbeit an - interagieren Sie <br />
-          mit Projekten um meine Fähigkeiten in Aktion zu sehen.
+        <p class="karla break">
+          {{ "PROJECTS.INFO_TEXT" | translate }}
         </p>
       </div>
     </div>
@@ -105,8 +104,12 @@
           </div>
 
           <div class="project-description-container">
-            <h3 class="fira-code">Worum geht es bei diesem Projekt?</h3>
-            <p class="karla">{{ selectedProject.description }}</p>
+            <h3 class="fira-code">
+              {{ "PROJECTS.OVERLAY_QUESTION" | translate }}
+            </h3>
+            <p class="karla">
+              {{ selectedProject.descriptionKey | translate }}
+            </p>
           </div>
 
           <div class="overlay-tools">
@@ -127,7 +130,7 @@
               rel="noopener noreferrer"
             >
               <div class="link-btns">
-                <p class="karla">Github</p>
+                <p class="karla">{{ "PROJECTS.GITHUB" | translate }}</p>
                 <img
                   class="link-arrow"
                   src="../../assets/img/projects-icons/arrow-green.svg"
@@ -142,7 +145,7 @@
               rel="noopener noreferrer"
             >
               <div class="link-btns">
-                <p class="karla">Live Test</p>
+                <p class="karla">{{ "PROJECTS.LIVE_TEST" | translate }}</p>
                 <img
                   class="link-arrow"
                   src="../../assets/img/projects-icons/arrow-green.svg"
@@ -176,7 +179,7 @@
           />
 
           <div class="next-project-btn" (click)="showNextProject($event)">
-            <p class="karla">Nächstes Projekt</p>
+            <p class="karla">{{ "PROJECTS.NEXT_PROJECT" | translate }}</p>
             <img
               src="../../assets/img/projects-icons/next-project-arrow.svg"
               alt="Pfeil"

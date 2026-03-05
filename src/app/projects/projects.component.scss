@@ -13,6 +13,10 @@ section {
   gap: 20px;
 }
 
+.break {
+  white-space: pre-line;
+}
+
 .projects-content {
   padding: 32px;
   max-width: 1440px;
@@ -194,13 +198,15 @@ section {
   color: rgba(255, 255, 255, 1);
   width: 18px;
   height: 18px;
-  transition: transform 0.3s ease-in-out, color 0.2s ease;
+  transition:
+    transform 0.3s ease-in-out,
+    color 0.2s ease;
 
-   &:hover {
+  &:hover {
     cursor: pointer;
     color: rgba(61, 207, 182, 1);
     transform: scale(1.4);
-   }
+  }
 }
 
 .project-information {
@@ -212,63 +218,63 @@ section {
   margin: 0;
 }
 
-  .number-and-name-container {
+.number-and-name-container {
   display: flex;
   flex-direction: column;
   gap: 24px;
 
-    h1 {
-      color: rgba(61, 207, 182, 1);
-      font-size: 128px;
-      margin: 0;
-    }
-    h2 {
-      font-size: 64px;
-      color: rgba(255, 255, 255, 1);
-      margin: 0;
-    }
+  h1 {
+    color: rgba(61, 207, 182, 1);
+    font-size: 128px;
+    margin: 0;
   }
+  h2 {
+    font-size: 64px;
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+  }
+}
 
-  .project-description-container {
+.project-description-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
 
-    h3 {
-      font-size: 24px;
-      color: rgba(61, 207, 182, 1);
-      margin: 0;
-    }
-    p {
-      font-size: 18px;
-      color: rgba(255, 255, 255, 1);
-    }
+  h3 {
+    font-size: 24px;
+    color: rgba(61, 207, 182, 1);
+    margin: 0;
   }
-
-  .overlay-tools {
-    display: flex;
-    gap: 16px;
-    font-size: 16px;
+  p {
+    font-size: 18px;
     color: rgba(255, 255, 255, 1);
   }
+}
 
-  .tool {
-    display: flex;
-    gap: 4px;
-    justify-content: center;
-    align-items: center;
+.overlay-tools {
+  display: flex;
+  gap: 16px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);
+}
 
-      .tool-icon {
-        height: 24px;
-        width: 20px;
-      }
+.tool {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+
+  .tool-icon {
+    height: 24px;
+    width: 20px;
   }
+}
 
-  .preview-image {
-    width: 520px;
-    height: 370px;
-    border-radius: 30px;
-  }
+.preview-image {
+  width: 520px;
+  height: 370px;
+  border-radius: 30px;
+}
 
 .link-btns-container {
   display: flex;
@@ -277,10 +283,10 @@ section {
   gap: 32px;
   width: 100%;
   height: fit-content;
-    a {
-      text-decoration: none;
-      color: rgba(255, 255, 255, 1);
-    }
+  a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+  }
 }
 
 .link-btns {
@@ -343,5 +349,3 @@ section {
     }
   }
 }
-
-

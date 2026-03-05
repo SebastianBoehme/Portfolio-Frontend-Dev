@@ -38,5 +38,15 @@
     },
     "CTA": "Let's Talk",
     "TOOLTIP_HEADER": "I am interested in learning the following skills:"
+  },
+  "PROJECTS": {
+  "TITLE": "My Projects",
+  "INFO_TEXT": "Take a look at a selection of my work - interact with projects to see my skills in action.",
+  "OVERLAY_QUESTION": "What is this project about?",
+  "GITHUB": "Github",
+  "LIVE_TEST": "Live Test",
+  "NEXT_PROJECT": "Next project",
+  "JOIN_DESC": "A collaborative task management tool inspired by Trello – create and assign tasks, organize them by status via drag-and-drop, and manage a full contact list (create, edit, and delete).",
+  "POLLO_DESC": "A fun, fast-paced 2D platformer built with an object-oriented approach. Join Pepe in his epic battle against a chicken uprising – run, jump, and take down crazy hens by throwing Tabasco bottles."
   }
 }
