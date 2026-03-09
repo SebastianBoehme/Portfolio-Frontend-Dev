@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-imprint',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './imprint.component.html',
-  styleUrl: './imprint.component.scss'
+  styleUrl: './imprint.component.scss',
 })
 export class ImprintComponent {
-  highlightColor = 'rgba(255, 255, 255, 1)'
+  constructor(public translate: TranslateService) {}
 
+  highlightColor = 'rgba(255, 255, 255, 1)';
 }

@@ -68,5 +68,26 @@
   "ROLE": "Frontend Web Developer",
   "LOCATION": "Alzey, Germany",
   "IMPRINT": "Imprint"
+  },
+  "IMPRINT": {
+   "TITLE": "Legal Notice",
+  "SUBTITLE": "Imprint",
+  "BOARD_EXPLORATION": "Exploring the Board",
+  "BOARD_TEXT": "Email: sebastianboehme.dev&#64;gmail.com",
+  "TERMS_TITLE": "Acceptance of Terms",
+  "TERMS_TEXT": "By accessing and using <span class='highlight'>Portfolio</span> (Product), you acknowledge and agree to comply with the terms and conditions and all guidelines or amendments presented to you. We, the listed students, may update or change the terms and conditions from time to time without prior notice.",
+  "SCOPE_TITLE": "Scope and Ownership of the Product",
+  "SCOPE_TEXT": "<span class='highlight'>Portfolio</span> was developed as part of a student group project in a web development bootcamp at <span class='highlight'>Developer Akademie GmbH</span>. It serves an educational purpose and is not intended for extensive private or business use. Therefore, we cannot guarantee constant availability, reliability, or accuracy of this product.",
+  "DESIGN_TEXT": "The design of <span class='highlight'>Portfolio</span> belongs to <span class='highlight'>Developer Akademie GmbH</span>. Unauthorized use, reproduction, modification, distribution, or duplication of the design is strictly prohibited.",
+  "PROPERTY_TITLE": "Proprietary Rights",
+  "PROPERTY_TEXT": "Apart from the design, which belongs to <span class='highlight'>Developer Akademie GmbH</span>, we, the listed students, retain all ownership rights to <span class='highlight'>Portfolio</span>, including all associated copyrighted materials and trademarks.",
+  "USAGE_TITLE": "Use of the Product",
+  "USAGE_TEXT": "<span class='highlight'>Portfolio</span> is to be used exclusively for lawful purposes. Any use of <span class='highlight'>Portfolio</span> for illegal activities or to harass, harm, or threaten another person is strictly prohibited. You are solely responsible for your interactions with other users of <span class='highlight'>Portfolio</span>.",
+  "LIABILITY_TITLE": "Disclaimer and Limitation of Liability",
+  "LIABILITY_TEXT": "<span class='highlight'>Portfolio</span> is provided 'as is' without any warranty. In no event shall we, the listed students, or the <span class='highlight'>Developer Akademie</span>, be liable for any direct, indirect, incidental, or consequential damages.",
+  "INDEMNITY_TITLE": "Indemnity",
+  "INDEMNITY_TEXT": "You agree to indemnify and hold harmless us, the listed students, the <span class='highlight'>Developer Akademie</span>, and our affiliates from any claims arising out of or in connection with your use of <span class='highlight'>Portfolio</span>.",
+  "CONTACT_FINAL": "For any questions or notices, please contact us at Email: sebastianboehme.dev&#64;gmail.com.",
+  "DATE": "Date: July 26, 2025"
   }
 }
