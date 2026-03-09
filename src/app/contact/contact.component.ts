@@ -1,24 +1,24 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, TranslateModule],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss'
+  styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
+  constructor(public translate: TranslateService) {}
 
-  concactData = {
-    name: "",
-    email: "",
-    message: ""
+  contactData = {
+    name: '',
+    email: '',
+    message: '',
+  };
+
+  onSubmit() {
+    console.log(this.contactData);
   }
-
-onSubmit(){
-  console.log(this.concactData);
-  
-}
-
 }

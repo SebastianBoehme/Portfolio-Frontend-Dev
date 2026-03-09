@@ -48,5 +48,20 @@
   "NEXT_PROJECT": "Nächstes Projekt",
   "JOIN_DESC": "Ein kollaboratives To-do-Tool nach dem Vorbild von Trello - Aufgaben erstellen, zuweisen und per Drag & Drop nach Status sortieren sowie Kontakte erstellen, bearbeiten und löschen",
   "POLLO_DESC": "Ein kleines, lustiges 2D Spiel mit einem Objektorientierten Ansatz. Begleite Pepe bei seinem Kampf gegen einen Hühneraufstand. Renne, springe und bewirf die verrückten Hennen mit Tabascoflaschen."
+  },
+  "CONTACT": {
+    "GREETING": "Kontaktieren Sie mich",
+    "HEADLINE": "Arbeiten wir zusammen",
+    "PROBLEM_TITLE": "Sie haben ein Problem zu lösen?",
+    "DESCRIPTION": "Ich suche nach Stellen als Frontend-Entwickler mit starkem Fokus auf UI/UX. <br /> Mein Ziel ist es, Benutzeroberflächen und Designs zu gestalten und umzusetzen,<br /> die nicht nur gut aussehen, sondern sich auch natürlich und intuitiv anfühlen.",
+    "NEED_DEV": "Sie brauchen einen Frontend-Entwickler?",
+    "LET_S_TALK": "Lassen Sie uns reden!",
+    "QUESTION_NAME": "Wie ist ihr Name?",
+    "PLACEHOLDER_NAME": "Ihr Name kommt hier hin.",
+    "QUESTION_EMAIL": "Wie lautet Ihre E-Mail Adresse?",
+    "PLACEHOLDER_EMAIL": "ihreemail@email.com",
+    "QUESTION_MESSAGE": "Wie kann ich Ihnen helfen?",
+    "PLACEHOLDER_MESSAGE": "Hi Sebastian, ...",
+    "SAY_HELLO": "Sagen Sie hallo :)"
   }
 }

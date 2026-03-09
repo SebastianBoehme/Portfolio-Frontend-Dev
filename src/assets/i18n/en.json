@@ -19,7 +19,7 @@
     "DESCRIPTION": "Hi! I'm Sebastian. I'm a Junior Frontend Developer and an absolute CSS maniac. I love bringing designs to life and using my creative mindset and eye for detail to help create digital works of art.",
     "LOCATION_TEXT": "Based in Alzey, near Mainz. Generally open to remote positions.",
     "TOOLS_TEXT": "I love discovering new tools and expanding my skills with the ones I already know.",
-    "CREATIVITY_TEXT": "My eye for the little things and my creative mind help me implement many complex designs. I enjoy brainstorming the best solutions – alone, but also gladly in a team.",
+    "CREATIVITY_TEXT": "My eye for the little things and my creative mind help me implement many complex designs. I enjoy brainstorming for the best solutions. Alone, but also gladly in a team.",
     "ALT": {
       "PROFILE": "Picture of the developer",
       "LOCATION": "location-pin",
@@ -30,23 +30,38 @@
   "SKILLS": {
     "SUBTITLE": "Technologies",
     "TITLE": "Skill Set",
-    "DESCRIPTION": "My skillset consists of HTML, CSS, JavaScript, Angular, TypeScript and Material Design. Furthermore, I am familiar with tools like Git, Firebase and RestAPI. Also techniques like Scrum and associated Kanbans like Trello are no strangers to me.",
+    "DESCRIPTION": "My skillset contains HTML, CSS, JavaScript, Angular, TypeScript and Material Design. Furthermore, I am familiar with tools like Git, Firebase and RestAPI. Also techniques like Scrum and associated Kanbans like Trello are no strangers to me.",
     "SEARCH": {
       "PREFIX": "Looking for",
       "HIGHLIGHT": "other skills?",
-      "DESCRIPTION": "Feel free to contact me. I look forward to expanding my skills."
+      "DESCRIPTION": "Feel free to contact me. I look forward to expand my skills."
     },
     "CTA": "Let's Talk",
     "TOOLTIP_HEADER": "I am interested in learning the following skills:"
   },
   "PROJECTS": {
   "TITLE": "My Projects",
-  "INFO_TEXT": "Take a look at a selection of my work - interact with projects to see my skills in action.",
+  "INFO_TEXT": "Take a look at a selection of my works - interact with projects to see my skills in action.",
   "OVERLAY_QUESTION": "What is this project about?",
   "GITHUB": "Github",
   "LIVE_TEST": "Live Test",
   "NEXT_PROJECT": "Next project",
   "JOIN_DESC": "A collaborative task management tool inspired by Trello – create and assign tasks, organize them by status via drag-and-drop, and manage a full contact list (create, edit, and delete).",
   "POLLO_DESC": "A fun, fast-paced 2D platformer built with an object-oriented approach. Join Pepe in his epic battle against a chicken uprising – run, jump, and take down crazy hens by throwing Tabasco bottles."
+  },
+  "CONTACT": {
+    "GREETING": "Contact me",
+    "HEADLINE": "Let's work together",
+    "PROBLEM_TITLE": "Got a problem to solve?",
+    "DESCRIPTION": "I am looking for frontend developer positions with a strong focus on UI/UX. <br /> My goal is to design and implement user interfaces <br /> that don't just look great but also feel natural and intuitive.",
+    "NEED_DEV": "Need a frontend developer?",
+    "LET_S_TALK": "Let's talk!",
+    "QUESTION_NAME": "What is your name?",
+    "PLACEHOLDER_NAME": "Your name goes here.",
+    "QUESTION_EMAIL": "What is your email address?",
+    "PLACEHOLDER_EMAIL": "youremail@email.com",
+    "QUESTION_MESSAGE": "How can I help you?",
+    "PLACEHOLDER_MESSAGE": "Hi Sebastian, ...",
+    "SAY_HELLO": "Say hello :)"
   }
 }
