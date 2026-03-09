@@ -63,5 +63,10 @@
     "QUESTION_MESSAGE": "Wie kann ich Ihnen helfen?",
     "PLACEHOLDER_MESSAGE": "Hi Sebastian, ...",
     "SAY_HELLO": "Sagen Sie hallo :)"
+  },
+  "FOOTER": {
+  "ROLE": "Frontend Web Entwickler",
+  "LOCATION": "Alzey, Deutschland",
+  "IMPRINT": "Impressum"
   }
 }

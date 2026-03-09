@@ -63,5 +63,10 @@
     "QUESTION_MESSAGE": "How can I help you?",
     "PLACEHOLDER_MESSAGE": "Hi Sebastian, ...",
     "SAY_HELLO": "Say hello :)"
+  },
+  "FOOTER": {
+  "ROLE": "Frontend Web Developer",
+  "LOCATION": "Alzey, Germany",
+  "IMPRINT": "Imprint"
   }
 }
