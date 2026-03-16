@@ -213,3 +213,8 @@ section {
     }
   }
 }
+
+:host .form-input.input-invalid::placeholder {
+  color: rgba(236, 123, 123, 0.8) !important;
+  opacity: 1 !important;
+}

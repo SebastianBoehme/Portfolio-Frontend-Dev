@@ -20,45 +20,73 @@
     </div>
 
     <div class="contact-form">
-      <form (ngSubmit)="onSubmit()">
+      <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
         <div class="single-form">
-          <label class="fira-code" for="name">{{
-            "CONTACT.QUESTION_NAME" | translate
-          }}</label>
+          <label class="fira-code" for="name">
+            {{ "CONTACT.QUESTION_NAME" | translate }}
+          </label>
           <input
             [(ngModel)]="contactData.name"
             type="text"
             id="name"
             name="name"
-            [placeholder]="'CONTACT.PLACEHOLDER_NAME' | translate"
+            #name="ngModel"
+            required
             class="karla form-input"
+            [class.input-invalid]="
+              name.invalid && (name.touched || contactForm.submitted)
+            "
+            [placeholder]="
+              name.invalid && (name.touched || contactForm.submitted)
+                ? 'Ups! Scheinbar fehlt hier Ihr Name.'
+                : ('CONTACT.PLACEHOLDER_NAME' | translate)
+            "
           />
         </div>
 
         <div class="single-form-mid">
-          <label class="fira-code" for="email">{{
-            "CONTACT.QUESTION_EMAIL" | translate
-          }}</label>
+          <label class="fira-code" for="email">
+            {{ "CONTACT.QUESTION_EMAIL" | translate }}
+          </label>
           <input
             [(ngModel)]="contactData.email"
             type="email"
             id="email"
             name="email"
-            [placeholder]="'CONTACT.PLACEHOLDER_EMAIL' | translate"
+            #email="ngModel"
+            required
+            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
             class="karla form-input"
+            [class.input-invalid]="
+              email.invalid && (email.touched || contactForm.submitted)
+            "
+            [placeholder]="
+              email.invalid && (email.touched || contactForm.submitted)
+                ? 'Hoppla! Ihre E-Mail ist erforderlich.'
+                : ('CONTACT.PLACEHOLDER_EMAIL' | translate)
+            "
           />
         </div>
 
         <div class="single-form">
-          <label class="fira-code" for="message">{{
-            "CONTACT.QUESTION_MESSAGE" | translate
-          }}</label>
+          <label class="fira-code" for="message">
+            {{ "CONTACT.QUESTION_MESSAGE" | translate }}
+          </label>
           <textarea
             [(ngModel)]="contactData.message"
             id="message"
             name="message"
-            [placeholder]="'CONTACT.PLACEHOLDER_MESSAGE' | translate"
-            class="karla email-input auto-grow"
+            #message="ngModel"
+            required
+            class="karla form-input auto-grow"
+            [class.input-invalid]="
+              message.invalid && (message.touched || contactForm.submitted)
+            "
+            [placeholder]="
+              message.invalid && (message.touched || contactForm.submitted)
+                ? 'Was möchten Sie entwickeln?'
+                : ('CONTACT.PLACEHOLDER_MESSAGE' | translate)
+            "
           ></textarea>
         </div>
 
@@ -67,8 +95,9 @@
             <span
               class="animated-text"
               [attr.data-text]="'CONTACT.SAY_HELLO' | translate"
-              >{{ "CONTACT.SAY_HELLO" | translate }}</span
             >
+              {{ "CONTACT.SAY_HELLO" | translate }}
+            </span>
           </button>
         </div>
       </form>
