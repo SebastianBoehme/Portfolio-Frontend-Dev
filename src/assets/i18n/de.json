@@ -62,6 +62,9 @@
     "PLACEHOLDER_EMAIL": "ihreemail@email.com",
     "QUESTION_MESSAGE": "Wie kann ich Ihnen helfen?",
     "PLACEHOLDER_MESSAGE": "Hi Sebastian, ...",
+    "ERROR_NAME": "Ups! Scheinbar fehlt hier Ihr Name.",
+    "ERROR_EMAIL": "Hoppla! Ihre E-Mail ist erforderlich.",
+    "ERROR_MESSAGE": "Was möchten Sie entwickeln?",
     "SAY_HELLO": "Sagen Sie hallo :)"
   },
   "FOOTER": {

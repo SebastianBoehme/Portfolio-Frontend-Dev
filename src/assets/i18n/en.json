@@ -62,6 +62,9 @@
     "PLACEHOLDER_EMAIL": "youremail@email.com",
     "QUESTION_MESSAGE": "How can I help you?",
     "PLACEHOLDER_MESSAGE": "Hi Sebastian, ...",
+    "ERROR_NAME": "Oops! It seems your name is missing.",
+    "ERROR_EMAIL": "Hoppla! Your email is required.",
+    "ERROR_MESSAGE": "What would you like to develop?",
     "SAY_HELLO": "Say hello :)"
   },
   "FOOTER": {

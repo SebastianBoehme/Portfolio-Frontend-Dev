@@ -38,7 +38,7 @@
             "
             [placeholder]="
               name.invalid && (name.touched || contactForm.submitted)
-                ? 'Ups! Scheinbar fehlt hier Ihr Name.'
+                ? ('CONTACT.ERROR_NAME' | translate)
                 : ('CONTACT.PLACEHOLDER_NAME' | translate)
             "
           />
@@ -62,7 +62,7 @@
             "
             [placeholder]="
               email.invalid && (email.touched || contactForm.submitted)
-                ? 'Hoppla! Ihre E-Mail ist erforderlich.'
+                ? ('CONTACT.ERROR_EMAIL' | translate)
                 : ('CONTACT.PLACEHOLDER_EMAIL' | translate)
             "
           />
@@ -84,7 +84,7 @@
             "
             [placeholder]="
               message.invalid && (message.touched || contactForm.submitted)
-                ? 'Was möchten Sie entwickeln?'
+                ? ('CONTACT.ERROR_MESSAGE' | translate)
                 : ('CONTACT.PLACEHOLDER_MESSAGE' | translate)
             "
           ></textarea>
