@@ -5,7 +5,7 @@
   </div>
 
   <div class="button-container">
-    <div class="hero-button">
+    <div class="hero-button" (click)="scrollToAnchor('projects')">
       <p
         class="animated-text"
         [attr.data-text]="'HERO.PROJECTS_BTN' | translate"
@@ -13,7 +13,8 @@
         {{ "HERO.PROJECTS_BTN" | translate }}
       </p>
     </div>
-    <div class="hero-button">
+
+    <div class="hero-button" (click)="scrollToAnchor('contact')">
       <p
         class="animated-text"
         [attr.data-text]="'HERO.CONTACT_BTN' | translate"

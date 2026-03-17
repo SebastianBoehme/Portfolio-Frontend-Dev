@@ -11,6 +11,17 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 export class HeroSectionComponent {
   email: string = 'sebastianboehme.dev@gmail.com';
 
+  scrollToAnchor(elementId: string): void {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest',
+      });
+    }
+  }
+
   marqueeItems: string[] = [
     'HERO.LOCATION',
     'HERO.OPEN_FOR_WORK',
