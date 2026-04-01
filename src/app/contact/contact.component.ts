@@ -16,6 +16,7 @@ export class ContactComponent {
     name: '',
     email: '',
     message: '',
+    privacyAccepted: false,
   };
 
   onSubmit(ngForm: NgForm) {

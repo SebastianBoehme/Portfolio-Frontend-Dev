@@ -90,8 +90,37 @@
           ></textarea>
         </div>
 
+        <div class="privacy-container">
+          <div class="checkbox-wrapper">
+            <input
+              [(ngModel)]="contactData.privacyAccepted"
+              type="checkbox"
+              id="privacy"
+              name="privacy"
+              #privacy="ngModel"
+              required
+              class="privacy-checkbox"
+            />
+            <label for="privacy" class="karla">
+              Ich habe die
+              <a href="/privacy-policy" target="_blank" class="green-text"
+                >Datenschutzerklärung</a
+              >
+              gelesen und bin mit der Verarbeitung meiner Daten einverstanden.
+            </label>
+          </div>
+
+          @if (privacy.invalid && (privacy.touched || contactForm.submitted)) {
+            <p class="error-msg">Bitte akzeptiere die Datenschutzerklärung.</p>
+          }
+        </div>
+
         <div class="submit-area">
-          <button type="submit" class="contact-btn karla">
+          <button
+            type="submit"
+            class="contact-btn karla"
+            [disabled]="contactForm.invalid"
+          >
             <span
               class="animated-text"
               [attr.data-text]="'CONTACT.SAY_HELLO' | translate"
