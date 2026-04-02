@@ -93,33 +93,36 @@
         <div class="privacy-container">
           <div class="checkbox-wrapper">
             <input
-              [(ngModel)]="contactData.privacyAccepted"
+              [(ngModel)]="privacyData.privacyAccepted"
               type="checkbox"
-              id="privacy"
               name="privacy"
               #privacy="ngModel"
               required
               class="privacy-checkbox"
             />
-            <label for="privacy" class="karla">
+            <label class="karla privacy-text">
               Ich habe die
-              <a href="/privacy-policy" target="_blank" class="green-text"
+              <a routerLink="/imprint" class="fira-code"
                 >Datenschutzerklärung</a
               >
               gelesen und bin mit der Verarbeitung meiner Daten einverstanden.
             </label>
           </div>
 
-          @if (privacy.invalid && (privacy.touched || contactForm.submitted)) {
-            <p class="error-msg">Bitte akzeptiere die Datenschutzerklärung.</p>
-          }
+          <div class="error-spacer">
+            @if (privacy.invalid && contactForm.dirty) {
+              <p class="error-msg karla">
+                Bitte akzeptiere die Datenschutzerklärung.
+              </p>
+            }
+          </div>
         </div>
 
         <div class="submit-area">
           <button
             type="submit"
             class="contact-btn karla"
-            [disabled]="contactForm.invalid"
+            [disabled]="privacy.invalid"
           >
             <span
               class="animated-text"

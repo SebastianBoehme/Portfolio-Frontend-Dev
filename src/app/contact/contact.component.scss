@@ -1,5 +1,5 @@
 section {
-  height: 100svh;
+  height: calc(100svh + 244px);
   margin-bottom: -244px;
   width: 100%;
   display: flex;
@@ -189,7 +189,11 @@ section {
       color: rgba(120, 120, 120, 1); // Ausgegrauter Text
       cursor: not-allowed;
       opacity: 0.7;
-      pointer-events: none; // Verhindert Hover-Effekte und Animationen
+    }
+
+    .contact-btn.btn-invalid {
+      opacity: 0.7;
+      filter: grayscale(1);
     }
 
     // Zustand: Aktiv & Hover
@@ -225,10 +229,83 @@ section {
     }
   }
 
-  :host .form-input.input-invalid::placeholder {
-    color: rgba(236, 123, 123, 0.8) !important;
-    opacity: 1 !important;
+  input.form-input.input-invalid,
+  textarea.form-input.input-invalid {
+    color: #ff5252 !important;
+
+    &::placeholder {
+      color: #ff5252 !important;
+      opacity: 1;
+    }
   }
 }
 
 // Checkbox - Test
+
+.privacy-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.privacy-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 1px solid rgba(61, 207, 182, 1);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  position: relative;
+}
+
+.privacy-checkbox:checked {
+  background-color: rgba(61, 207, 182, 0.1); /* Optional: leichte Füllung */
+}
+
+.privacy-checkbox:checked::after {
+  content: "✔";
+  color: rgba(61, 207, 182, 1);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+label.privacy-text {
+  font-size: 15px !important;
+  color: white !important;
+
+  a {
+    text-decoration: none;
+    color: rgba(61, 207, 182, 1);
+    cursor: pointer;
+  }
+}
+
+.error-spacer {
+  height: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: start;
+}
+
+p.error-msg {
+  color: #ff5252;
+  font-size: 14px;
+  margin: 0;
+  text-align: start;
+}
