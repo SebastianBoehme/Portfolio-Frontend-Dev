@@ -109,3 +109,29 @@ a {
     filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.25));
   }
 }
+
+// Responsive
+
+@media screen and (max-width: 900px) {
+  .navigation-section {
+    padding-left: 68px;
+    padding-right: 68px;
+  }
+
+  img.logo {
+    width: 125px;
+    height: 125px;
+  }
+
+  a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .navigation-section {
+    a.fira-code {
+      display: none;
+    }
+  }
+}
