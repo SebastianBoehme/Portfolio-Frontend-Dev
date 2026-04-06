@@ -140,14 +140,8 @@ a {
   width: 100vw;
   height: 100vh;
 
-  /* EXAKT WIE IM BILD: Fast kein Blur, nur leichte Abdunkelung */
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.4
-  ); // Etwas heller, damit der Name gut lesbar bleibt
-  backdrop-filter: blur(1px); // Nur ein Hauch von Unschärfe für die Tiefe
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(1px);
 
   display: block;
   z-index: 1000;
@@ -156,12 +150,12 @@ a {
 
 .menu-box {
   position: absolute;
-  top: 80px; // Positionierung oben rechts (anpassen je nach Header-Höhe)
+  top: 80px;
   right: 30px;
 
   width: 238px;
   min-height: 252px;
-  padding: 40px 0; // Horizontales Padding entfernt für bessere Zentrierung der Links
+  padding: 40px 0;
   border-radius: 30px;
   border: 1px solid rgba(61, 207, 182, 1);
   background: linear-gradient(
@@ -195,7 +189,6 @@ a {
   }
 }
 
-/* Sprachschalter Styling innerhalb der Box */
 .language-switch-overlay {
   display: flex;
   align-items: center;

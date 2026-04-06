@@ -40,7 +40,6 @@
       </div>
     </div>
 
-    <!-- Deine Desktop Links (bleiben wie sie sind) -->
     <a class="fira-code nav-desktop-link" href="#about-me">{{
       "NAV.ABOUT" | translate
     }}</a>
@@ -56,7 +55,7 @@
     <img class="logo" src="assets/img/logo.png" alt="logo" />
   </a>
 
-  <!-- DAS OVERLAY -->
+  <!-- OVERLAY -->
   @if (isMenuOpen) {
     <div class="overlay-backdrop" (click)="closeMenu()">
       <div class="menu-box" (click)="$event.stopPropagation()">
@@ -72,7 +71,6 @@
           }}</a>
         </nav>
 
-        <!-- Sprachschalter innerhalb der Box -->
         <div class="language-switch-overlay" (click)="switchLanguage()">
           <div
             class="toggle-pill"
