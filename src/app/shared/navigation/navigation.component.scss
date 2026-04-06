@@ -110,6 +110,128 @@ a {
   }
 }
 
+.burger-menu {
+  position: relative;
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  .bar {
+    width: 32px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 1);
+    transition: background-color 0.3s ease;
+  }
+
+  &.open {
+    .bar {
+      background-color: rgba(61, 207, 182, 1);
+    }
+  }
+}
+
+.overlay-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  /* EXAKT WIE IM BILD: Fast kein Blur, nur leichte Abdunkelung */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.4
+  ); // Etwas heller, damit der Name gut lesbar bleibt
+  backdrop-filter: blur(1px); // Nur ein Hauch von Unschärfe für die Tiefe
+
+  display: block;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.menu-box {
+  position: absolute;
+  top: 80px; // Positionierung oben rechts (anpassen je nach Header-Höhe)
+  right: 30px;
+
+  width: 238px;
+  min-height: 252px;
+  padding: 40px 0; // Horizontales Padding entfernt für bessere Zentrierung der Links
+  border-radius: 30px;
+  border: 1px solid rgba(61, 207, 182, 1);
+  background: linear-gradient(
+    180deg,
+    rgba(28, 28, 28, 1) 0%,
+    rgba(8, 70, 59, 1) 100%
+  );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.overlay-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+/* Sprachschalter Styling innerhalb der Box */
+.language-switch-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  width: 90px;
+  height: 35px;
+  border: 1px solid rgba(61, 207, 182, 1);
+  border-radius: 20px;
+  cursor: pointer;
+
+  span {
+    font-size: 14px;
+    z-index: 2;
+    color: rgba(61, 207, 182, 1);
+    &.active {
+      color: white;
+    }
+  }
+
+  .toggle-pill {
+    position: absolute;
+    left: 2px;
+    width: 44px;
+    height: 29px;
+    background: rgba(61, 207, 182, 1);
+    border-radius: 18px;
+    transition: transform 0.3s ease;
+    z-index: 1;
+
+    &.is-en {
+      transform: translateX(42px);
+    }
+  }
+}
+
 // Responsive
 
 @media screen and (max-width: 900px) {
@@ -130,8 +252,25 @@ a {
 
 @media screen and (max-width: 750px) {
   .navigation-section {
-    a.fira-code {
+    flex-direction: row-reverse;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    a.nav-desktop-link {
       display: none;
     }
+  }
+
+  .language-switch {
+    display: none;
+  }
+
+  .burger-menu {
+    display: flex;
+  }
+
+  img.logo {
+    width: 100px;
+    height: 100px;
   }
 }

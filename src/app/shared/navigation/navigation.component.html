@@ -1,5 +1,15 @@
 <section class="navigation-section">
   <div class="nav-container">
+    <button
+      class="burger-menu"
+      (click)="toggleMenu()"
+      [class.open]="isMenuOpen"
+    >
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
     <div
       class="language-switch"
       (click)="switchLanguage()"
@@ -30,12 +40,56 @@
       </div>
     </div>
 
-    <a class="fira-code" href="#about-me">{{ "NAV.ABOUT" | translate }}</a>
-    <a class="fira-code" href="#skills">{{ "NAV.SKILLS" | translate }}</a>
-    <a class="fira-code" href="#projects">{{ "NAV.PROJECTS" | translate }}</a>
+    <!-- Deine Desktop Links (bleiben wie sie sind) -->
+    <a class="fira-code nav-desktop-link" href="#about-me">{{
+      "NAV.ABOUT" | translate
+    }}</a>
+    <a class="fira-code nav-desktop-link" href="#skills">{{
+      "NAV.SKILLS" | translate
+    }}</a>
+    <a class="fira-code nav-desktop-link" href="#projects">{{
+      "NAV.PROJECTS" | translate
+    }}</a>
   </div>
 
   <a href="#">
     <img class="logo" src="assets/img/logo.png" alt="logo" />
   </a>
+
+  <!-- DAS OVERLAY -->
+  @if (isMenuOpen) {
+    <div class="overlay-backdrop" (click)="closeMenu()">
+      <div class="menu-box" (click)="$event.stopPropagation()">
+        <nav class="overlay-nav">
+          <a class="fira-code" href="#about-me" (click)="closeMenu()">{{
+            "NAV.ABOUT" | translate
+          }}</a>
+          <a class="fira-code" href="#skills" (click)="closeMenu()">{{
+            "NAV.SKILLS" | translate
+          }}</a>
+          <a class="fira-code" href="#projects" (click)="closeMenu()">{{
+            "NAV.PROJECTS" | translate
+          }}</a>
+        </nav>
+
+        <!-- Sprachschalter innerhalb der Box -->
+        <div class="language-switch-overlay" (click)="switchLanguage()">
+          <div
+            class="toggle-pill"
+            [class.is-en]="(translate.getCurrentLang() || 'de') === 'en'"
+          ></div>
+          <span
+            class="fira-code"
+            [class.active]="(translate.getCurrentLang() || 'de') === 'de'"
+            >DE</span
+          >
+          <span
+            class="fira-code"
+            [class.active]="(translate.getCurrentLang() || 'de') === 'en'"
+            >EN</span
+          >
+        </div>
+      </div>
+    </div>
+  }
 </section>
