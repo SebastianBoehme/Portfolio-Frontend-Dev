@@ -212,6 +212,15 @@ section {
   z-index: 1;
 }
 
+.mail-icon {
+  height: 32px;
+  width: 32px;
+  background-image: url(../../assets/img/mail.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+}
+
 .linkedin-icon {
   height: 32px;
   width: 32px;
@@ -251,5 +260,72 @@ section {
 
   &:hover {
     color: rgba(61, 207, 182, 1);
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .headline-container h1 {
+    font-size: 86px;
+  }
+  .headline-container h2 {
+    font-size: 32px;
+  }
+
+  .decoration-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .headline-container h1 {
+    font-size: 62px;
+  }
+  .headline-container h2 {
+    font-size: 24px;
+  }
+  .banner p {
+    font-size: 24px;
+  }
+  a.email-link {
+    display: none;
+  }
+
+  .mail-icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .button-container {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .headline-container h1 {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .headline-container h1 {
+    font-size: 36px;
+  }
+
+  .headline-container h2 {
+    font-size: 20px;
+  }
+
+  .hero-button {
+    width: fit-content;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    p {
+      font-size: 16px;
+    }
   }
 }
