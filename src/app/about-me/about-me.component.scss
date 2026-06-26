@@ -1,5 +1,5 @@
 section {
-  height: 100svh;
+  min-height: 100svh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -66,7 +66,7 @@ h2 {
   gap: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-start;
   width: 568px;
   height: 540px;
@@ -111,4 +111,71 @@ p {
 .info-icon {
   width: 32px;
   height: 32px;
+}
+@media screen and (max-width: 1300px) {
+  .content-container {
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .content-left {
+    justify-content: center;
+    margin-top: 112px;
+  }
+
+  .content-right {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .profile-picture {
+    margin-left: -435px;
+    height: 450px;
+    width: 450px;
+  }
+
+  .profile-shadow {
+    margin-top: 10px;
+    height: 450px;
+    width: 450px;
+  }
+  .info-block {
+    height: fit-content;
+    width: 450px;
+    gap: 20px;
+    padding: 24px;
+    h1 {
+      font-size: 42px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .profile-picture {
+    margin-left: -335px;
+    height: 350px;
+    width: 350px;
+  }
+
+  .profile-shadow {
+    margin-top: 10px;
+    height: 350px;
+    width: 350px;
+  }
+  .info-block {
+    height: fit-content;
+    width: 350px;
+    gap: 20px;
+    padding: 16px;
+    h1 {
+      font-size: 32px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
 }
