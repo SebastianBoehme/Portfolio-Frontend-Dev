@@ -166,8 +166,8 @@ p {
     height: 350px;
     width: 350px;
   }
+
   .info-block {
-    height: fit-content;
     width: 350px;
     gap: 20px;
     padding: 16px;
@@ -176,6 +176,35 @@ p {
     }
     p {
       font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .profile-picture {
+    margin-left: -265px;
+    height: 275px;
+    width: 275px;
+  }
+
+  .profile-shadow {
+    margin-top: 5px;
+    height: 275px;
+    width: 275px;
+  }
+
+  .info-block {
+    width: 275px;
+    gap: 20px;
+    padding: 16px;
+    h1 {
+      font-size: 32px;
+    }
+    p {
+      font-size: 16px;
+    }
+    h2 {
+      font-size: 20px;
     }
   }
 }
