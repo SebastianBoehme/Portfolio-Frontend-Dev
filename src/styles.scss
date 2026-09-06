@@ -33,3 +33,23 @@
   font-weight: 400;
   src: url("./assets/fonts/karla-v31-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  height: 100vh;
+  overflow-y: scroll; /* Erzwingt die Scrollbar, damit der Snap-Kontext stabil bleibt */
+}
+
+body {
+  margin: 0;
+  /* Wichtig: body darf hier kein overflow: hidden oder feste height haben, 
+     damit das Dokument normal scrollen kann */
+}
+
+.snap-section {
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always; /* Verhindert das "Überspringen" von mehreren Sektionen bei schnellem Scrollen */
+}

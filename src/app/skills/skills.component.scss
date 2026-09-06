@@ -86,23 +86,28 @@ p {
 }
 
 .lets-talk-button {
+  background-color: rgba(28, 28, 28, 0);
   color: rgba(255, 255, 255, 1);
   height: 48px;
-  width: 122px;
+  width: fit-content;
+  padding: 0 32px;
   border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 100px;
   overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  font-size: 18px;
 
   &:hover {
-    cursor: pointer;
     border-color: rgba(61, 207, 182, 1);
     color: rgba(61, 207, 182, 1);
 
     .animated-text {
-      animation: marquee 2s ease-out infinite;
+      animation: marquee 1s ease-out infinite;
     }
   }
 
@@ -116,8 +121,8 @@ p {
 
     &::after {
       content: attr(data-text);
-      position: fixed;
-      left: calc(100% + 40%);
+      position: absolute;
+      left: calc(100% + 125%);
       white-space: nowrap;
     }
   }

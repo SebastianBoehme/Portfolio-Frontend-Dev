@@ -170,23 +170,22 @@ section {
     color: rgba(255, 255, 255, 1);
     height: 48px;
     width: fit-content;
-    padding: 0 32px; // Ein bisschen Padding für die Pill-Form
+    padding: 0 32px;
     border: 1px solid rgba(255, 255, 255, 1);
     border-radius: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; // Geändert von overflow-x für saubere Kanten
+    overflow: hidden;
     cursor: pointer;
     position: relative;
     transition: all 0.3s ease;
     font-size: 18px;
 
-    // Zustand: Deaktiviert (Checkbox nicht angehakt)
     &:disabled {
-      background-color: rgba(45, 45, 45, 1); // Dunkleres Grau
-      border-color: rgba(80, 80, 80, 1); // Dezenterer Rand
-      color: rgba(120, 120, 120, 1); // Ausgegrauter Text
+      background-color: rgba(45, 45, 45, 1);
+      border-color: rgba(80, 80, 80, 1);
+      color: rgba(120, 120, 120, 1);
       cursor: not-allowed;
       opacity: 0.7;
     }
@@ -196,7 +195,6 @@ section {
       filter: grayscale(1);
     }
 
-    // Zustand: Aktiv & Hover
     &:not(:disabled):hover {
       border-color: rgba(61, 207, 182, 1);
       color: rgba(61, 207, 182, 1);
@@ -214,7 +212,7 @@ section {
 
     &::after {
       content: attr(data-text);
-      position: absolute; // Fixed innerhalb des relativen Containers besser als fixed
+      position: absolute;
       left: calc(100% + 40%);
       white-space: nowrap;
     }
